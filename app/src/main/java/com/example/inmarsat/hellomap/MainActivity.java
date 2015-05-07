@@ -110,7 +110,7 @@ public class MainActivity extends FragmentActivity {
             // Set up with the REST API end point
             HttpGet request = new HttpGet("https://api-sandbox.inmarsat.com/v1/application/currentuser/location");
             // Add the authorization header, this key is for the sandbox only, use your own in the live environment
-            request.addHeader("Authorization", "0MG9OAlw9vJMkJ58Vw2spBEjmsvWi8IA");
+            request.addHeader("Authorization", "A4mdOtMrpxrBkirw9Rir5H1CJz5d8XKZ");
 
             HttpClient client = new DefaultHttpClient();
             HttpResponse httpResponse;
@@ -181,7 +181,7 @@ public class MainActivity extends FragmentActivity {
         protected String doInBackground(String... params) {
 
             HttpGet request = new HttpGet("https://api-sandbox.inmarsat.com/v1/application/currentuser/accessNetwork");
-            request.addHeader("Authorization", "0MG9OAlw9vJMkJ58Vw2spBEjmsvWi8IA");
+            request.addHeader("Authorization", "A4mdOtMrpxrBkirw9Rir5H1CJz5d8XKZ");
 
             HttpClient client = new DefaultHttpClient();
             HttpResponse httpResponse;
